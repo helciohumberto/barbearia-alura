@@ -1,0 +1,180 @@
+@charset "UTF-8";
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background: #898A8A;
+    padding: 20px 0;
+}
+
+.caixa {
+    position: relative;
+    width: 940px;
+    margin: auto;
+}
+
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+#texto-home, nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+
+}
+
+
+nav a {
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+
+}
+
+nav a:hover {
+    color: #E0E5E4;
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    background: url("imagens/bg.jpg");
+    padding: 40px 0;
+}
+
+.copy {
+    color: white;
+    font-size: 13px;
+    margin: 20px;
+}
+
+.principal strong {
+    font-weight: bold;
+}
+
+/* css da página inicial */
+.banner {
+    width: 100%;
+}
+
+.titulo-principal {
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+    color: black;
+}
+
+.principal {
+    background: #E0E5E4;
+    padding: 3em;
+}
+
+.principal p {
+    margin: 0 0 1em;
+}
+
+.principal em {
+    font-style: italic;
+}
+
+.itens {
+    font-style: italic;
+}
+
+.itens::before {
+    content: "🟊";
+}
+
+.imgbeneficios {
+    width: 60%;
+    opacity: 0.8;
+    box-shadow: 8px 8px 8px 2px black;
+}
+
+.imgbeneficios:hover {
+    width: 63%;
+    opacity: 30;
+    transition: 800ms ;
+}
+
+.conteudo-beneficios {
+    width: 640px;
+    margin: 0 auto;
+}
+
+.beneficios {
+    padding: 3em;
+    background: #898A8A;
+}
+.lista-beneficios {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15px;
+}
+
+.utensilios {
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.itens {
+    line-height: 1;
+}
+.itens:first-child {
+    font-weight: bold;
+}
+
+.mapa {
+    background: linear-gradient(#E0E5E4, #898A8A);
+    padding: 3em 0;
+}
+
+
+.mapa-cont {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.nosso-estabelecimento {
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.video {
+    width: 560px;
+    margin: 2em auto;
+    text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+    .caixa, .principal, .conteudo-beneficios, .mapa-cont, .video {
+        width: auto;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+    }
+
+    nav a {
+        font-size: 15px;
+    }
+
+    .lista-beneficios, .imgbeneficios {
+        width: 100%;
+    }   
+}
